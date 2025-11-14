@@ -1,0 +1,68 @@
+Descripcion:
+The clinical dataset was collected from the Internal Medicine Outpatient Clinic of Ankara VM 
+Medical Park Hospital and includes data from 319 individuals (June 2022–June 2023), 161 of 
+whom were diagnosed with gallstone disease. It contains 38 features, including demographic,
+bioimpedance, and laboratory data, and was ethically approved by the Ankara City Hospital 
+Ethics Committee (E2-23-4632). Demographic variables are age, sex, height, weight, and BMI. 
+Bioimpedance data includes total, extracellular, and intracellular water, muscle and fat mass, 
+protein, visceral fat area, and hepatic fat. Laboratory features are glucose, total cholesterol,
+HDL, LDL, triglycerides, AST, ALT, ALP, creatinine, GFR, CRP, hemoglobin, and vitamin D. 
+The dataset is complete, with no missing values, and balanced in terms of disease status, 
+eliminating the need for additional preprocessing. It provides a strong foundation for machine 
+learning-based gallstone prediction using non-imaging features.
+
+
+Additional Variable Information
+Class Labels
+
+- Gallstone Status: 0 (Yes), 1 (No)
+- Gender: 0 (Male), 1 (Female)
+- Comorbidity: 0 (No comorbidities present),1 (One comorbid condition), 2 (Two comorbid conditions), 3 (Three or more comorbid conditions)
+- Coronary Artery Disease: 0 (No), 1 (Yes) 
+- Hypothyroidism: 0 (No), 1 (Yes)
+- Hyperlipidemia: 0 (No), 1 (Yes)
+- Diabetes Mellitus: 0 (No), 1 (Yes)
+- Hepatic Fat Accumulation (HFA): 0 (No fat accumulation),1 (Grade 1 (mild)), 2 (Grade 2 (moderate)), 3 (Grade 3 (severe)), 4 (Grade 4 (very severe))
+
+
+Variables Table
+Variable Name	Role	Type	Demographic	Description	Units	Missing Values
+Gallstone Status	Target	Binary		Target variable, Gallstones present(0), and absent(1)		no
+Age	Feature	Integer	Age	Age of the person		no
+Gender	Feature	Categorical	Gender	Gender of the person		no
+Comorbidity	Feature	Categorical		Concomitant diseases		no
+Coronary Artery Disease (CAD)	Feature	Binary		Cardiovascular disease		no
+Hypothyroidism	Feature	Binary		Underactive thyroid gland		no
+Hyperlipidemia	Feature	Binary		High levels of fat in the blood		no
+Diabetes Mellitus (DM)	Feature	Binary		High blood sugar		no
+Height	Feature	Integer		Height is the length		no
+Weight	Feature	Continuous		Body weight		no
+Body Mass Index (BMI)	Feature	Continuous		Weight for height ratio		no
+Total Body Water (TBW)	Feature	Continuous		Total water in the body		no
+Extracellular Water (ECW)	Feature	Continuous		It is extracellular water		no
+Intracellular Water (ICW)	Feature	Continuous		It is intracellular water		no
+Extracellular Fluid/Total Body Water (ECF/TBW)	Feature	Continuous		Extracellular water content		no
+Total Body Fat Ratio (TBFR)	Feature	Continuous		Total fat content	%	no
+Lean Mass (LM)	Feature	Continuous		Lean body mass	%	no
+Body Protein Content (Protein)	Feature	Continuous		Essential building blocks for the body	%	no
+Visceral Fat Rating (VFR)	Feature	Integer		Visceral organ fat level		no
+Bone MassBone Mass (BM)	Feature	Continuous		Bone weight		no
+Muscle Mass (MM)	Feature	Continuous		Amount of muscle		no
+Obesity	Feature	Continuous		Excessive adiposity	%	no
+Total Fat Content (TFC)	Feature	Continuous		Total fat amount		no
+Visceral Fat Area (VFA)	Feature	Continuous		Inner adipose tissue area		no
+Visceral Muscle Area (VMA)	Feature	Continuous		Inner muscle area	kg	no
+Hepatic Fat Accumulation (HFA)	Feature	Categorical		Accumulation of fat in the liver		no
+Glucose	Feature	Continuous		Blood sugar		no
+Total Cholesterol (TC)	Feature	Continuous		It is total cholesterol		no
+Low Density Lipoprotein (LDL)	Feature	Continuous		Bad cholesterol		no
+High Density Lipoprotein (HDL)	Feature	Continuous		Good cholesterol		no
+Triglyceride	Feature	Continuous		Type of fat found in the blood		no
+Aspartat Aminotransferaz (AST)	Feature	Continuous		Type of liver enzyme		no
+Alanin Aminotransferaz (ALT)	Feature	Continuous		An enzyme related to the liver		no
+Alkaline Phosphatase (ALP)	Feature	Continuous		Type of liver and bone enzyme		no
+Creatinine	Feature	Continuous		Kidney function indicator		no
+Glomerular Filtration Rate (GFR)	Feature	Continuous		Kidney filtration rate		no
+C-Reactive Protein (CRP)	Feature	Continuous		Inflammation indicator		no
+Hemoglobin (HGB)	Feature	Continuous		Protein in the blood that carries oxygen		no
+Vitamin D	Feature	Continuous		Essential vitamin for bone health		no
