@@ -1,0 +1,36 @@
+==========================================================================================
+GALLSTONE DETECTION MODEL - METADATA
+==========================================================================================
+
+model_name: XGBoost
+test_recall: 0.8541666666666666
+test_f2: 0.8540523647475519
+test_auc: 0.9131944444444444
+false_negatives: 4
+cv_recall_mean: 0.7678075396825397
+cv_recall_std: 0.0501005323571179
+balancing_method: SMOTE
+n_features: 31
+dataset_size: 319
+train_size: 226
+seed: 40
+timestamp: 20251121_132629
+
+==========================================================================================
+PERFORMANCE SUMMARY
+==========================================================================================
+Test Recall: 0.8542 (Critical metric)
+Test F2-Score: 0.8541
+False Negatives: 4
+CV Recall: 0.7678 ± 0.0501
+
+==========================================================================================
+IMPROVEMENTS IMPLEMENTED
+==========================================================================================
+✅ Pipeline with StandardScaler + Feature Engineering
+✅ Balancing: SMOTE (only on train)
+✅ Hyperparameter optimization for all models
+✅ Stratified K-Fold CV on full dataset
+✅ Recall prioritization (F2-Score)
+✅ ROC curves and advanced visualizations
+✅ Statistical tests and outlier analysis
